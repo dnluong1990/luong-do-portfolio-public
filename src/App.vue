@@ -90,9 +90,8 @@ const currentData = computed(() => cvData[currentLang.value]);
     
     <!-- Footer Section -->
     <footer class="footer">
-      <div class="container">
-        <p>&copy; {{ new Date().getFullYear() }} {{ currentData.personal.name }}. All rights reserved.</p>
-        <p class="built-with">Built with Vue.js</p>
+      <div class="container text-center">
+        <p>Built with ❤️ by {{ currentData.personal.name }}</p>
       </div>
     </footer>
   </main>

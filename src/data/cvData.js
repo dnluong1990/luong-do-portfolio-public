@@ -14,8 +14,10 @@ export const cvData = {
       confidential: "Dự án nội bộ (NDA)"
     },
     personal: {
-      name: "ĐỖ NGỌC LƯƠNG",
+      name: "Đỗ Ngọc Lương",
+      greeting: "Xin chào, mình là Ngọc Lương 👋",
       title: "Senior Fullstack Developer / Frontend Team Lead",
+      tagline: "Yêu thích coding, sáng tạo trong công việc.",
       phone: "0972.704.974",
       email: "dnluong1990@gmail.com",
       address: "Biên Hòa, Đồng Nai",
@@ -134,8 +136,10 @@ export const cvData = {
       confidential: "Confidential (NDA)"
     },
     personal: {
-      name: "ĐỖ NGỌC LƯƠNG",
+      name: "Do Ngoc Luong",
+      greeting: "Hi, I'm Luong Do 👋",
       title: "Senior Fullstack Developer / Frontend Team Lead",
+      tagline: "Passionate about coding, creative at work.",
       phone: "0972.704.974",
       email: "dnluong1990@gmail.com",
       address: "Bien Hoa, Dong Nai",

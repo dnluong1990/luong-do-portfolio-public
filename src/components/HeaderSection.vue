@@ -13,8 +13,8 @@ const props = defineProps({
     <header class="header-section section animate-fade-in">
         <div class="container header-container">
             <div class="header-content">
-                <h1 class="name">{{ personal.name }}</h1>
-                <h2 class="title">{{ personal.title }}</h2>
+                <h1 class="name">{{ personal.greeting || personal.name }}</h1>
+                <h2 class="title">{{ personal.tagline || personal.title }}</h2>
                 <div class="contact-info">
                     <a :href="`mailto:${personal.email}`" class="contact-item">
                         <svg
@@ -101,10 +101,10 @@ const props = defineProps({
 }
 
 .name {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
     background: linear-gradient(
         135deg,
         var(--text-main) 0%,
@@ -115,8 +115,9 @@ const props = defineProps({
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
+    line-height: 1.6;
     color: var(--text-muted);
     margin-bottom: 2rem;
 }
@@ -191,7 +192,7 @@ const props = defineProps({
     }
 
     .name {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .contact-info {
