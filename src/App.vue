@@ -9,15 +9,15 @@ import SkillsSection from './components/SkillsSection.vue';
 import EducationSection from './components/EducationSection.vue';
 
 const currentLang = ref('vi');
-const isDarkMode = ref(false);
+const isDarkMode = ref(true);
 
 onMounted(() => {
-  // Check local storage or system preference
+  // Check local storage or set default to dark
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
     isDarkMode.value = savedTheme === 'dark';
   } else {
-    isDarkMode.value = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    isDarkMode.value = true; // Default to dark theme
   }
   updateTheme();
 });
