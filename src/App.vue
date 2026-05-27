@@ -74,7 +74,7 @@ const currentData = computed(() => cvData[currentLang.value]);
     <HeaderSection :personal="currentData.personal" />
 
     <!-- About Section -->
-    <AboutSection v-appear :summary="currentData.summary" :goals="currentData.goals" :ui="currentData.ui" />
+    <AboutSection v-appear :summary="currentData.summary" :ui="currentData.ui" />
 
     <!-- Featured Projects Section -->
     <FeaturedProjectsSection v-appear :projects="currentData.featuredProjects" :ui="currentData.ui" />

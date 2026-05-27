@@ -1,11 +1,7 @@
 <script setup>
 defineProps({
   summary: {
-    type: String,
-    required: true
-  },
-  goals: {
-    type: Object,
+    type: Array,
     required: true
   },
   ui: {
@@ -21,25 +17,14 @@ defineProps({
       <h2 class="section-title">{{ ui.about }}</h2>
       <div class="about-content">
         <div class="card summary-card">
-          <p class="summary-text">{{ summary }}</p>
-        </div>
-        
-        <div class="goals-container">
-          <div class="card goal-card">
-            <div class="goal-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-            </div>
-            <h3>{{ ui.shortTerm }}</h3>
-            <p>{{ goals.shortTerm }}</p>
-          </div>
-          
-          <div class="card goal-card">
-            <div class="goal-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
-            </div>
-            <h3>{{ ui.longTerm }}</h3>
-            <p>{{ goals.longTerm }}</p>
-          </div>
+          <ul class="summary-list">
+            <li v-for="(item, index) in summary" :key="index" class="summary-item">
+              <span class="bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <p class="summary-text">{{ item }}</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -53,37 +38,41 @@ defineProps({
   gap: 2rem;
 }
 
-.summary-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
+.summary-card {
+  padding: 2rem;
 }
 
-.goals-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.goal-card {
+.summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border-top: 4px solid var(--primary-color);
 }
 
-.goal-icon {
-  width: 48px;
-  height: 48px;
+.summary-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.bullet {
+  color: var(--primary-color);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
   background-color: rgba(37, 99, 235, 0.1);
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-color);
 }
 
-.goal-card h3 {
-  font-size: 1.25rem;
-  color: var(--text-main);
+.summary-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
 }
 </style>

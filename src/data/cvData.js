@@ -1,9 +1,7 @@
 export const cvData = {
   vi: {
     ui: {
-      about: "Về Bản Thân",
-      shortTerm: "Mục Tiêu Ngắn Hạn",
-      longTerm: "Mục Tiêu Dài Hạn",
+      about: "Mục Tiêu Nghề Nghiệp",
       experience: "Kinh Nghiệm Làm Việc",
       featuredProjects: "Dự Án Nổi Bật",
       projects: "Các module tiêu biểu:",
@@ -16,18 +14,19 @@ export const cvData = {
     personal: {
       name: "Đỗ Ngọc Lương",
       greeting: "Xin chào, mình là Ngọc Lương 👋",
-      title: "Senior Fullstack Developer / Frontend Team Lead",
+      title: "Fullstack Developer – Logistics & E-commerce Solutions",
       tagline: "Yêu thích coding, sáng tạo trong công việc.",
       phone: "0972.704.974",
       email: "dnluong1990@gmail.com",
       address: "Biên Hòa, Đồng Nai",
       birthYear: "1990",
     },
-    summary: "Lập trình viên Fullstack với hơn 8 năm kinh nghiệm thực chiến trong việc xây dựng hệ thống (Logistics, E-commerce). Thế mạnh đặc biệt về Frontend hiện đại (Reactjs, React Native, Vuejs) và Backend hiệu suất cao (Nestjs, PostgresSql). Đã có hơn 4 năm kinh nghiệm dẫn dắt đội nhóm, quản lý dự án từ khâu phân tích yêu cầu đến khi triển khai thực tế. Luôn ưu tiên việc tối ưu hóa trải nghiệm người dùng, hiệu suất hệ thống và áp dụng AI vào quy trình phát triển để tăng năng suất.",
-    goals: {
-      shortTerm: "Hoàn thiện kỹ năng quản lý để đảm nhiệm vị trí Tech Lead, xây dựng đội ngũ kỹ thuật tinh nhuệ.",
-      longTerm: "Nghiên cứu sâu về kiến trúc hệ thống mở rộng (Scalability) và bảo mật, đóng góp vào các dự án mang tính đột phá về công nghệ và AI."
-    },
+    summary: [
+      "Đam mê phát triển các hệ thống có tính năng cao, chú trọng đến từng chi tiết, luôn tìm cách cải thiện trải nghiệm người dùng.",
+      "Chủ động và có tinh thần trách nhiệm cao, luôn nỗ lực tìm giải pháp tốt để phục vụ công việc, dễ dàng thích nghi và học hỏi những điều mới.",
+      "Hiểu biết cơ bản về máy chủ, cơ sở dữ liệu và kinh nghiệm tốt trong thiết kế và phát triển API RESTful.",
+      "Ứng dụng AI vào quy trình phát triển để tăng năng suất."
+    ],
     skills: [
       {
         category: "Ngôn ngữ & Framework",
@@ -35,7 +34,7 @@ export const cvData = {
       },
       {
         category: "Front-end",
-        items: ["Pinia", "HTML5", "CSS", "SCSS", "Bootstrap", "TailwindCSS", "WordPress"]
+        items: ["Vuex", "Pinia", "React Hook", "HTML5", "CSS", "SCSS", "Bootstrap", "TailwindCSS", "WordPress"]
       },
       {
         category: "Back-end & Database",
@@ -47,7 +46,7 @@ export const cvData = {
       },
       {
         category: "Công nghệ hỗ trợ",
-        items: ["Codex", "ChatGPT", "Gemini", "NotebookLM"]
+        items: ["Codex", "Claude", "Antigravity", "ChatGPT", "Gemini"]
       }
     ],
     featuredProjects: [
@@ -79,15 +78,19 @@ export const cvData = {
         position: "Trưởng nhóm Front-end",
         period: "Từ 1/2022 đến 3/2026 – Onsite",
         description: [
-          "Quản lý & Điều phối: Trực tiếp quản lý tiến độ, phân bổ đầu việc và hướng dẫn (mentoring) các thành viên trong team.",
-          "Kiến trúc hệ thống: Làm việc với lãnh đạo/khách hàng để phân tích nghiệp vụ, thiết kế luồng vận hành (Workflow) và cấu trúc dữ liệu.",
-          "Phát triển Fullstack: Trực tiếp tham gia vào các module phức tạp, hiệu suất cao."
+          "Phối hợp với các trưởng nhóm kỹ thuật, nhóm thiết kế.",
+          "Hợp tác đội ngũ back-end để triển khai các mẫu front-end, HTML, CSS, Javascript, Reactjs/Nextjs, React Native, VueJs.",
+          "Tham gia review code và thiết kế để duy trì các tiêu chuẩn phát triển cao của sản phẩm.",
+          "Thiết kế và phát triển giao diện người dùng hiệu suất cao.",
+          "Thực hiện tái cấu trúc và tối ưu hóa code hiện có khi cần thiết.",
+          "Giám sát hiệu suất website, webapp và xác định cũng như khắc phục các vấn đề về khả năng sử dụng.",
+          "Đảm bảo chất lượng, unit test các sản phẩm dựa trên yêu cầu kĩ thuật."
         ],
         projects: [
           {
             name: "Hệ thống Quản lý Vận tải (TMS)",
-            role: "Chịu trách nhiệm chính Frontend & thiết kế luồng vận hành Logistics.",
-            achievements: "Triển khai thành công hệ thống phân quyền phức tạp (RBAC) cho nhiều vai trò (Admin, điều phối, tài xế), giúp tối ưu hóa quy trình giao nhận, bảng giá vận tải, hệ thống công nợ đối soát."
+            role: "Chịu trách nhiệm chính Frontend & thiết kế luồng vận hành Logistics theo yêu cầu.",
+            achievements: "Triển khai thành công hệ thống phân quyền (RBAC) cho nhiều vai trò (Admin, điều phối, tài xế), giúp tối ưu hóa quy trình giao nhận, bảng giá vận tải, hệ thống công nợ đối soát."
           },
           {
             name: "Hệ thống Quản lý Đơn hàng & Kho (OMS/WMS)",
@@ -117,39 +120,43 @@ export const cvData = {
       {
         school: "Đại học Công Nghiệp Tp. Hồ Chí Minh",
         degree: "Hệ Cao Đẳng (2010 – 2013)",
-        major: "Công nghệ phần mềm."
+        major: "Công nghệ phần mềm"
+      },
+      {
+        school: "Khóa đào tạo ứng dụng trí tuệ nhân tạo Al trong văn phòng",
+        degree: "VCCI (2025)",
+        major: ""
       }
     ]
   },
   en: {
     ui: {
-      about: "About Me",
-      shortTerm: "Short-term Goal",
-      longTerm: "Long-term Goal",
+      about: "Career Objective",
       experience: "Work Experience",
       featuredProjects: "Featured Projects",
-      projects: "Key Modules:",
+      projects: "Key Projects:",
       role: "Role:",
-      achievements: "Achievements:",
-      skills: "Technical Skills",
+      achievements: "Achievement:",
+      skills: "Skills",
       education: "Education",
       confidential: "Confidential (NDA)"
     },
     personal: {
       name: "Do Ngoc Luong",
       greeting: "Hi, I'm Luong Do 👋",
-      title: "Senior Fullstack Developer / Frontend Team Lead",
+      title: "Fullstack Developer – Logistics & E-commerce Solutions",
       tagline: "Passionate about coding, creative at work.",
       phone: "0972.704.974",
       email: "dnluong1990@gmail.com",
       address: "Bien Hoa, Dong Nai",
       birthYear: "1990",
     },
-    summary: "Fullstack Developer with over 8 years of hands-on experience building enterprise systems in Logistics and E-commerce domains. Strong expertise in modern frontend technologies (React.js, React Native, Vue.js) and high-performance backend development (NestJS, PostgreSQL). Over 4 years of experience leading development teams and managing projects from business analysis to production deployment. Passionate about optimizing user experience, system performance, and leveraging AI tools to improve development productivity.",
-    goals: {
-      shortTerm: "Enhance leadership and management skills to take on a Tech Lead role and build a high-performing engineering team.",
-      longTerm: "Deeply research scalable system architecture and security, while contributing to innovative technology and AI-driven projects."
-    },
+    summary: [
+      "Passionate about developing highly functional systems, paying attention to detail, and constantly seeking to improve user experience.",
+      "Proactive and have a high sense of responsibility, always striving to find good solutions for work, easily adaptable and eager to learn new things.",
+      "Basic understanding of servers, databases, and solid experience in designing and developing RESTful APIs.",
+      "Applying AI into the development process to increase productivity."
+    ],
     skills: [
       {
         category: "Languages & Frameworks",
@@ -157,19 +164,19 @@ export const cvData = {
       },
       {
         category: "Frontend",
-        items: ["Pinia", "HTML5", "CSS", "SCSS", "Bootstrap", "TailwindCSS", "WordPress"]
+        items: ["Vuex", "Pinia", "React Hook", "HTML5", "CSS", "SCSS", "Bootstrap", "TailwindCSS", "WordPress"]
       },
       {
         category: "Backend & Database",
         items: ["RESTful APIs", "PostgreSQL", "Authentication & Authorization (RBAC)"]
       },
       {
-        category: "Tools & Others",
+        category: "Tools",
         items: ["Git", "GitHub", "Figma", "Photoshop"]
       },
       {
-        category: "AI Tools",
-        items: ["Codex", "ChatGPT", "Gemini", "NotebookLM"]
+        category: "Supporting Technologies",
+        items: ["Codex", "Claude", "Antigravity", "ChatGPT", "Gemini"]
       }
     ],
     featuredProjects: [
@@ -181,7 +188,7 @@ export const cvData = {
         isConfidential: false
       },
       {
-        title: "Transport Management System (TMS)",
+        title: "Transportation Management System (TMS)",
         description: "Core logistics system managing role-based access, pricing logic, debt reconciliation, and truck dispatching.",
         techStack: ["Vue.js", "Pinia", "SCSS"],
         image: "tms_routing_preview.png",
@@ -198,39 +205,43 @@ export const cvData = {
     experience: [
       {
         company: "Smartway Informatics Joint Stock Company",
-        position: "Front-end Team Leader",
-        period: "Jan 2022 – Mar 2026 (Onsite)",
+        position: "Front-end team leader",
+        period: "1/2022 to 3/2026 – Onsite",
         description: [
-          "Team Management & Coordination: Managed project progress, assigned tasks, and mentored team members.",
-          "System Architecture: Worked directly with stakeholders and clients to analyze business requirements, design workflows, and structure system data models.",
-          "Fullstack Development: Actively contributed to developing complex and high performance system modules."
+          "Coordinate with technical team leaders and the design team.",
+          "Collaborate with the back-end team to implement front-end templates, HTML, CSS, Javascript, Reactjs/Nextjs, React Native, VueJs.",
+          "Participate in code and design reviews to maintain high development standards for the product.",
+          "Design and develop high-performance user interfaces.",
+          "Refactor and optimize existing code when necessary.",
+          "Monitor website and webapp performance, identify and resolve usability issues.",
+          "Ensure quality, unit test products based on technical requirements."
         ],
         projects: [
           {
-            name: "Transport Management System (TMS)",
-            role: "Led frontend development and designed logistics workflows.",
-            achievements: "Successfully implemented a complex role-based access control system (RBAC) for multiple user roles (Admin, Dispatcher, Driver), optimizing delivery operations, transportation pricing, and debt reconciliation processes."
+            name: "Transportation Management System (TMS)",
+            role: "Main responsibility for Frontend & designing Logistics operational flows according to requirements.",
+            achievements: "Successfully implemented Role-Based Access Control (RBAC) system for multiple roles (Admin, dispatcher, driver), helping optimize the delivery process, transport pricing, and debt reconciliation system."
           },
           {
             name: "Order & Warehouse Management System (OMS/WMS)",
-            role: "Fullstack Developer, Mobile App Developer, and Outsource Team Coordinator.",
-            achievements: "Successfully published mobile applications on both App Store and Google Play."
+            role: "Fullstack Developer, Mobile App & Managing Outsource team progress.",
+            achievements: "Released the Mobile application on both App Store and Google Play."
           },
           {
             name: "Tour Planning System",
-            role: "",
-            achievements: "Successfully integrated Google Maps API to visualize and support automatic tour dispatching and route planning."
+            role: "Successfully integrated Google Maps API to display functions and automatic Tour coordination results.",
+            achievements: ""
           }
         ]
       },
       {
-        company: "Sao Kim IT Company Limited",
-        position: "Software Developer",
-        period: "Sep 2015 – Nov 2021 (Onsite)",
+        company: "Sao Kim Information Technology Co., Ltd",
+        position: "Developer",
+        period: "9/2015 to 11/2021 – Onsite",
         description: [
-          "Developed and delivered over 500+ website projects across various industries.",
-          "Worked with WordPress (PHP), JavaScript, and UI/UX Design tools (Figma, Photoshop).",
-          "Ensured balance between visual aesthetics, SEO performance, and optimized user experience."
+          "Web Development: Designed and built over 500+ website projects in various fields for clients.",
+          "Technologies: WordPress (PHP), JavaScript, UI/UX Design (Figma, Photoshop).",
+          "Ensure aesthetics go hand in hand with SEO performance and optimal user experience."
         ],
         projects: []
       }
@@ -240,6 +251,11 @@ export const cvData = {
         school: "Industrial University of Ho Chi Minh City",
         degree: "Associate Degree (2010 – 2013)",
         major: "Software Engineering"
+      },
+      {
+        school: "Training course AI application for work",
+        degree: "VCCI (2025)",
+        major: ""
       }
     ]
   }

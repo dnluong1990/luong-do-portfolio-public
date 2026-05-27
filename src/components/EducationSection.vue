@@ -25,8 +25,8 @@ defineProps({
             <h3 class="school">{{ edu.school }}</h3>
             <div class="degree-major">
               <span class="degree">{{ edu.degree }}</span>
-              <span class="separator">•</span>
-              <span class="major">{{ edu.major }}</span>
+              <span v-if="edu.major" class="separator">•</span>
+              <span v-if="edu.major" class="major">{{ edu.major }}</span>
             </div>
           </div>
         </div>
