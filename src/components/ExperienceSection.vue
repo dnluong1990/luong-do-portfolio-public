@@ -38,7 +38,14 @@ defineProps({
                 <div v-for="(project, i) in job.projects" :key="i" class="project-item">
                   <h6>{{ project.name }}</h6>
                   <p v-if="project.role"><strong>{{ ui.role }}</strong> {{ project.role }}</p>
-                  <p v-if="project.achievements"><strong>{{ ui.achievements }}</strong> {{ project.achievements }}</p>
+                  <p v-if="project.tech"><strong>{{ ui.tech }}</strong> {{ project.tech }}</p>
+                  <div v-if="project.achievements" class="project-achievements">
+                    <strong>{{ ui.achievements }}</strong>
+                    <ul v-if="Array.isArray(project.achievements)" class="achievements-list">
+                      <li v-for="(achieve, j) in project.achievements" :key="j">{{ achieve }}</li>
+                    </ul>
+                    <p v-else>{{ project.achievements }}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -169,7 +176,31 @@ defineProps({
   margin-bottom: 0.25rem;
 }
 
-.project-item p strong {
+.project-item p strong, .project-achievements strong {
   color: var(--text-muted);
+}
+
+.project-achievements {
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.achievements-list {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.25rem;
+}
+
+.achievements-list li {
+  position: relative;
+  margin-bottom: 0.25rem;
+  color: var(--text-main);
+}
+
+.achievements-list li::before {
+  content: '▹';
+  position: absolute;
+  left: -1rem;
+  color: var(--primary-color);
 }
 </style>

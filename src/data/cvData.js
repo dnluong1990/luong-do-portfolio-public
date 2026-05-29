@@ -1,20 +1,21 @@
 export const cvData = {
   vi: {
     ui: {
-      about: "Mục Tiêu Nghề Nghiệp",
+      about: "Tổng Quan",
       experience: "Kinh Nghiệm Làm Việc",
       featuredProjects: "Dự Án Nổi Bật",
       projects: "Các module tiêu biểu:",
       role: "Vai trò:",
+      tech: "Công nghệ:",
       achievements: "Thành tựu:",
-      skills: "Kỹ Năng",
-      education: "Học Vấn",
+      skills: "Kỹ Năng Chuyên Môn",
+      education: "Học Vấn & Chứng Chỉ",
       confidential: "Dự án nội bộ (NDA)"
     },
     personal: {
       name: "Đỗ Ngọc Lương",
       greeting: "Xin chào, mình là Ngọc Lương 👋",
-      title: "Fullstack Developer – Logistics & E-commerce Solutions",
+      title: "Front-end Team Lead | Senior Front-end Engineer",
       tagline: "Yêu thích coding, sáng tạo trong công việc.",
       phone: "0972.704.974",
       email: "dnluong1990@gmail.com",
@@ -22,31 +23,40 @@ export const cvData = {
       birthYear: "1990",
     },
     summary: [
-      "Đam mê phát triển các hệ thống có tính năng cao, chú trọng đến từng chi tiết, luôn tìm cách cải thiện trải nghiệm người dùng.",
-      "Chủ động và có tinh thần trách nhiệm cao, luôn nỗ lực tìm giải pháp tốt để phục vụ công việc, dễ dàng thích nghi và học hỏi những điều mới.",
-      "Hiểu biết cơ bản về máy chủ, cơ sở dữ liệu và kinh nghiệm tốt trong thiết kế và phát triển API RESTful.",
-      "Ứng dụng AI vào quy trình phát triển để tăng năng suất."
+      "Hơn 10 năm kinh nghiệm trong lĩnh vực phát triển phần mềm, và hơn 4 năm đảm nhiệm vai trò Trưởng nhóm Front-end và quản lý các dự án phần mềm doanh nghiệp.",
+      "Thông thạo về các công nghệ Front-end hiện đại như Vue.js, React.js, Next.js, React Native và TypeScript; đồng thời có kinh nghiệm thực tế với Node.js, NestJS và PostgreSQL trong lập trình Back-end.",
+      "Có kinh nghiệm xây dựng và triển khai các hệ thống quản lý doanh nghiệp quy mô lớn như Hệ thống Quản lý Vận tải (TMS), Hệ thống Quản lý Đơn hàng (OMS) và Hệ thống Quản lý Kho (WMS).",
+      "Có thế mạnh trong việc thiết kế kiến trúc Front-end có khả năng mở rộng, xây dựng hệ thống phân quyền RBAC và tối ưu hiệu năng ứng dụng.",
+      "Chủ động ứng dụng AI vào quy trình phát triển phần mềm nhằm hỗ trợ thiết kế kiến trúc, lập kế hoạch dự án và xây dựng tài liệu kỹ thuật."
     ],
     skills: [
       {
-        category: "Ngôn ngữ & Framework",
-        items: ["JavaScript", "TypeScript", "Vue.js", "Next.js", "React Native", "Node.js (Express, NestJS)"]
+        category: "Languages",
+        items: ["JavaScript (ES6+)", "TypeScript", "Kotlin"]
       },
       {
         category: "Front-end",
-        items: ["Vuex", "Pinia", "React Hook", "HTML5", "CSS", "SCSS", "Bootstrap", "TailwindCSS", "WordPress"]
+        items: ["Vue.js", "React.js", "Next.js", "React Native", "HTML5", "CSS3", "SCSS", "Bootstrap", "Tailwind CSS", "WordPress"]
       },
       {
-        category: "Back-end & Database",
-        items: ["RESTful API", "PostgreSQL", "Authentication & Authorization (RBAC)"]
+        category: "Back-end",
+        items: ["Node.js", "Express.js", "NestJS", "Kotlin (Spring Boot)", "RESTful APIs", "Authentication & Authorization (RBAC)"]
       },
       {
-        category: "Công cụ",
-        items: ["Git", "GitHub", "Figma", "Photoshop"]
+        category: "Database",
+        items: ["PostgreSQL", "MySQL"]
       },
       {
-        category: "Công nghệ hỗ trợ",
-        items: ["Codex", "Claude", "Antigravity", "ChatGPT", "Gemini"]
+        category: "Development Tools",
+        items: ["Git", "GitHub", "Figma", "Adobe Photoshop"]
+      },
+      {
+        category: "AI-Driven Software Development",
+        items: ["AI-assisted Architecture Design", "Project Planning", "Technical Documentation", "Code Generation & Refactoring"]
+      },
+      {
+        category: "Methodologies",
+        items: ["Agile/Scrum", "Code Review & Mentoring", "Performance Optimization", "UI/UX Collaboration", "Cross-functional Leadership"]
       }
     ],
     featuredProjects: [
@@ -74,77 +84,92 @@ export const cvData = {
     ],
     experience: [
       {
-        company: "Công Ty Cổ Phần Tin Học Smartway",
+        company: "Công ty Cổ Phần Tin Học Smartway",
         position: "Trưởng nhóm Front-end",
-        period: "Từ 1/2022 đến 3/2026 – Onsite",
+        period: "T1/2022 – T4/2026",
         description: [
-          "Phối hợp với các trưởng nhóm kỹ thuật, nhóm thiết kế.",
-          "Hợp tác đội ngũ back-end để triển khai các mẫu front-end, HTML, CSS, Javascript, Reactjs/Nextjs, React Native, VueJs.",
-          "Tham gia review code và thiết kế để duy trì các tiêu chuẩn phát triển cao của sản phẩm.",
-          "Thiết kế và phát triển giao diện người dùng hiệu suất cao.",
-          "Thực hiện tái cấu trúc và tối ưu hóa code hiện có khi cần thiết.",
-          "Giám sát hiệu suất website, webapp và xác định cũng như khắc phục các vấn đề về khả năng sử dụng.",
-          "Đảm bảo chất lượng, unit test các sản phẩm dựa trên yêu cầu kĩ thuật."
+          "Dẫn dắt và đào tạo đội ngũ Front-end trong nhiều dự án phần mềm doanh nghiệp (Đội ngũ: 9 thành viên).",
+          "Phối hợp với Product Owner, Designer, Back-end Developer, QA và các bên liên quan để triển khai sản phẩm.",
+          "Thực hiện code review và xây dựng tiêu chuẩn phát triển nhằm đảm bảo chất lượng phần mềm.",
+          "Thiết kế kiến trúc Front-end có khả năng mở rộng và tối ưu hiệu năng ứng dụng.",
+          "Quản lý tiến độ phát triển, phân công công việc và phối hợp với các nguồn lực Outsource.",
+          "Đảm bảo chất lượng sản phẩm thông qua kiểm thử và tuân thủ yêu cầu kỹ thuật."
         ],
         projects: [
           {
             name: "Hệ thống Quản lý Vận tải (TMS)",
-            role: "Chịu trách nhiệm chính Frontend & thiết kế luồng vận hành Logistics theo yêu cầu.",
-            achievements: "Triển khai thành công hệ thống phân quyền (RBAC) cho nhiều vai trò (Admin, điều phối, tài xế), giúp tối ưu hóa quy trình giao nhận, bảng giá vận tải, hệ thống công nợ đối soát."
+            role: "Trưởng nhóm Front-end",
+            tech: "Vue.js, TypeScript, NestJS, REST APIs, PostgreSQL",
+            achievements: [
+              "Thiết kế và triển khai các quy trình vận hành logistics.",
+              "Xây dựng hệ thống phân quyền RBAC cho các nhóm người dùng như Quản trị viên, Điều phối viên và Tài xế.",
+              "Tối ưu quy trình báo giá vận tải, điều phối vận chuyển và đối soát công nợ.",
+              "Nâng cao hiệu quả vận hành thông qua tự động hóa quy trình và cải thiện trải nghiệm người dùng.",
+              "Tích hợp Google Maps API phục vụ hiển thị bản đồ và lập kế hoạch tuyến đường."
+            ]
           },
           {
             name: "Hệ thống Quản lý Đơn hàng & Kho (OMS/WMS)",
-            role: "Fullstack Developer, Mobile App & Quản lý tiến độ đội Outsource.",
-            achievements: "Phát hành ứng dụng Mobile trên cả App Store và Google Play;"
-          },
-          {
-            name: "Hệ thống điều phối Tour (Tour Planning)",
-            role: "Tích hợp thành công Google Maps API hiển thị chức năng và kết quả điều phối Tour tự động.",
-            achievements: ""
+            role: "Full-stack Developer & Mobile App Lead",
+            tech: "Vue.js, React Native, NestJS, PostgreSQL",
+            achievements: [
+              "Phát triển hệ thống Web và Mobile phục vụ quản lý đơn hàng và kho vận.",
+              "Phát hành thành công ứng dụng trên Apple App Store và Google Play Store.",
+              "Điều phối nguồn lực Outsource và theo dõi tiến độ triển khai dự án.",
+              "Xây dựng các chức năng quản lý tồn kho và quy trình vận hành kho."
+            ]
           }
         ]
       },
       {
         company: "Công ty TNHH MTV CNTT Sao Kim",
-        position: "Lập trình viên",
-        period: "Từ 9/2015 đến 11/2021 – Onsite",
+        position: "Senior Web Developer",
+        period: "T9/2015 – T11/2021",
         description: [
-          "Phát triển Web: Thiết kế và xây dựng hơn 500+ dự án website đa dạng lĩnh vực cho khách hàng.",
-          "Công nghệ: WordPress (PHP), JavaScript, UI/UX Design (Figma, Photoshop).",
-          "Đảm bảo tính thẩm mỹ đi đôi với hiệu năng SEO và trải nghiệm người dùng tối ưu."
+          "Tham gia phát triển hơn 500 website thương mại thuộc nhiều lĩnh vực khác nhau.",
+          "Chuyên về WordPress, phát triển Front-end và thiết kế UI/UX.",
+          "Xây dựng các website chuẩn SEO, tối ưu hiệu năng và thân thiện với người dùng.",
+          "Làm việc trực tiếp với khách hàng để phân tích yêu cầu và triển khai giải pháp phù hợp.",
+          "Phối hợp cùng đội ngũ thiết kế và các bên liên quan nhằm đảm bảo mục tiêu dự án."
         ],
         projects: []
       }
     ],
     education: [
       {
-        school: "Đại học Công Nghiệp Tp. Hồ Chí Minh",
-        degree: "Hệ Cao Đẳng (2010 – 2013)",
-        major: "Công nghệ phần mềm"
+        school: "Công ty Cổ Phần Tin Học Smartway",
+        degree: "Danh hiệu hoàn thành tốt nhiệm vụ năm",
+        major: "2024"
       },
       {
         school: "Khóa đào tạo ứng dụng trí tuệ nhân tạo Al trong văn phòng",
-        degree: "VCCI (2025)",
-        major: ""
+        degree: "VCCI",
+        major: "2025"
+      },
+      {
+        school: "Đại học Công Nghiệp Tp. Hồ Chí Minh",
+        degree: "Hệ Cao Đẳng",
+        major: "Công nghệ phần mềm (2010 – 2013)"
       }
     ]
   },
   en: {
     ui: {
-      about: "Career Objective",
-      experience: "Work Experience",
+      about: "Professional Summary",
+      experience: "Professional Experience",
       featuredProjects: "Featured Projects",
       projects: "Key Projects:",
       role: "Role:",
-      achievements: "Achievement:",
-      skills: "Skills",
-      education: "Education",
+      tech: "Technologies:",
+      achievements: "Achievements:",
+      skills: "Technical Skills",
+      education: "Certifications & Education",
       confidential: "Confidential (NDA)"
     },
     personal: {
       name: "Do Ngoc Luong",
       greeting: "Hi, I'm Luong Do 👋",
-      title: "Fullstack Developer – Logistics & E-commerce Solutions",
+      title: "Front-end Team Lead | Senior Front-end Engineer",
       tagline: "Passionate about coding, creative at work.",
       phone: "0972.704.974",
       email: "dnluong1990@gmail.com",
@@ -152,31 +177,40 @@ export const cvData = {
       birthYear: "1990",
     },
     summary: [
-      "Passionate about developing highly functional systems, paying attention to detail, and constantly seeking to improve user experience.",
-      "Proactive and have a high sense of responsibility, always striving to find good solutions for work, easily adaptable and eager to learn new things.",
-      "Basic understanding of servers, databases, and solid experience in designing and developing RESTful APIs.",
-      "Applying AI into the development process to increase productivity."
+      "Senior Front-end Engineer and Team Lead with over 10 years of professional experience in software development, including over 4 years of leading engineering teams and managing enterprise software projects.",
+      "Strong expertise in modern Front-end technologies including Vue.js, React.js, Next.js, React Native, and TypeScript, with solid hands-on experience in Back-end development using Node.js, NestJS, and PostgreSQL.",
+      "Deep domain knowledge in building complex Transportation Management Systems (TMS), Order Management Systems (OMS), and Warehouse Management Systems (WMS).",
+      "Proven track record in designing scalable front-end architectures, implementing robust RBAC systems, and optimizing application performance.",
+      "Experienced in leveraging AI-assisted development tools for solution architecture, project planning, technical documentation, and full-stack development, including multi-tenant SaaS solutions."
     ],
     skills: [
       {
-        category: "Languages & Frameworks",
-        items: ["JavaScript", "TypeScript", "Vue.js", "Next.js", "React Native", "Node.js (Express, NestJS)"]
+        category: "Languages",
+        items: ["JavaScript (ES6+)", "TypeScript", "Kotlin"]
       },
       {
-        category: "Frontend",
-        items: ["Vuex", "Pinia", "React Hook", "HTML5", "CSS", "SCSS", "Bootstrap", "TailwindCSS", "WordPress"]
+        category: "Front-end",
+        items: ["Vue.js", "React.js", "Next.js", "React Native", "HTML5", "CSS3", "SCSS", "Bootstrap", "Tailwind CSS", "WordPress"]
       },
       {
-        category: "Backend & Database",
-        items: ["RESTful APIs", "PostgreSQL", "Authentication & Authorization (RBAC)"]
+        category: "Back-end",
+        items: ["Node.js", "Express.js", "NestJS", "Kotlin (Spring Boot)", "RESTful APIs", "Authentication & Authorization (RBAC)"]
       },
       {
-        category: "Tools",
-        items: ["Git", "GitHub", "Figma", "Photoshop"]
+        category: "Database",
+        items: ["PostgreSQL", "MySQL"]
       },
       {
-        category: "Supporting Technologies",
-        items: ["Codex", "Claude", "Antigravity", "ChatGPT", "Gemini"]
+        category: "Development Tools",
+        items: ["Git", "GitHub", "Figma", "Adobe Photoshop"]
+      },
+      {
+        category: "AI-Driven Software Development",
+        items: ["AI-assisted Architecture Design", "Project Planning", "Technical Documentation", "Code Generation & Refactoring"]
+      },
+      {
+        category: "Methodologies",
+        items: ["Agile/Scrum", "Code Review & Mentoring", "Performance Optimization", "UI/UX Collaboration", "Cross-functional Leadership"]
       }
     ],
     featuredProjects: [
@@ -204,58 +238,72 @@ export const cvData = {
     ],
     experience: [
       {
-        company: "Smartway Informatics Joint Stock Company",
-        position: "Front-end team leader",
-        period: "1/2022 to 3/2026 – Onsite",
+        company: "Smartway Informatics JSC",
+        position: "Front-end Team Lead",
+        period: "Jan 2022 – Apr 2026",
         description: [
-          "Coordinate with technical team leaders and the design team.",
-          "Collaborate with the back-end team to implement front-end templates, HTML, CSS, Javascript, Reactjs/Nextjs, React Native, VueJs.",
-          "Participate in code and design reviews to maintain high development standards for the product.",
-          "Design and develop high-performance user interfaces.",
-          "Refactor and optimize existing code when necessary.",
-          "Monitor website and webapp performance, identify and resolve usability issues.",
-          "Ensure quality, unit test products based on technical requirements."
+          "Led and mentored Front-end developers across multiple enterprise projects (Team Size: Up to 9 Developers).",
+          "Collaborated with Product Owners, Designers, Back-end Engineers, QA teams, and business stakeholders.",
+          "Conducted code reviews and established development standards to maintain software quality.",
+          "Designed scalable front-end architectures and optimized application performance.",
+          "Managed development progress, task allocation, and outsourcing resources.",
+          "Ensured product quality through testing and adherence to technical requirements."
         ],
         projects: [
           {
             name: "Transportation Management System (TMS)",
-            role: "Main responsibility for Frontend & designing Logistics operational flows according to requirements.",
-            achievements: "Successfully implemented Role-Based Access Control (RBAC) system for multiple roles (Admin, dispatcher, driver), helping optimize the delivery process, transport pricing, and debt reconciliation system."
+            role: "Front-end Lead",
+            tech: "Vue.js, TypeScript, NestJS, REST APIs, PostgreSQL",
+            achievements: [
+              "Designed and implemented logistics operation workflows.",
+              "Developed a Role-Based Access Control (RBAC) system supporting Administrators, Dispatchers, and Drivers.",
+              "Optimized transportation pricing, dispatching operations, and financial reconciliation processes.",
+              "Improved operational efficiency through workflow automation and enhanced user experience.",
+              "Integrated Google Maps API for route visualization and route planning functionalities."
+            ]
           },
           {
             name: "Order & Warehouse Management System (OMS/WMS)",
-            role: "Fullstack Developer, Mobile App & Managing Outsource team progress.",
-            achievements: "Released the Mobile application on both App Store and Google Play."
-          },
-          {
-            name: "Tour Planning System",
-            role: "Successfully integrated Google Maps API to display functions and automatic Tour coordination results.",
-            achievements: ""
+            role: "Full-stack Developer & Mobile App Lead",
+            tech: "Vue.js, React Native, NestJS, PostgreSQL",
+            achievements: [
+              "Developed enterprise web and mobile applications.",
+              "Successfully released mobile applications on Apple App Store and Google Play Store.",
+              "Coordinated outsourced development resources and project delivery schedules.",
+              "Implemented inventory management and warehouse operation workflows."
+            ]
           }
         ]
       },
       {
         company: "Sao Kim Information Technology Co., Ltd",
-        position: "Developer",
-        period: "9/2015 to 11/2021 – Onsite",
+        position: "Senior Web Developer",
+        period: "Sep 2015 – Nov 2021",
         description: [
-          "Web Development: Designed and built over 500+ website projects in various fields for clients.",
-          "Technologies: WordPress (PHP), JavaScript, UI/UX Design (Figma, Photoshop).",
-          "Ensure aesthetics go hand in hand with SEO performance and optimal user experience."
+          "Delivered 500+ commercial websites across multiple industries.",
+          "Specialized in WordPress development, front-end implementation, and UI/UX design.",
+          "Developed responsive, SEO-friendly, and high-performance websites.",
+          "Worked directly with clients to analyze requirements and deliver tailored digital solutions.",
+          "Collaborated with designers and stakeholders to ensure successful project outcomes."
         ],
         projects: []
       }
     ],
     education: [
       {
-        school: "Industrial University of Ho Chi Minh City",
-        degree: "Associate Degree (2010 – 2013)",
-        major: "Software Engineering"
+        school: "Smartway Informatics JSC",
+        degree: "Employee Excellence Recognition",
+        major: "2024"
       },
       {
-        school: "Training course AI application for work",
-        degree: "VCCI (2025)",
-        major: ""
+        school: "AI Applications in Business & Office Productivity",
+        degree: "VCCI",
+        major: "2025"
+      },
+      {
+        school: "Industrial University of Ho Chi Minh City",
+        degree: "Associate Degree in Software Engineering",
+        major: "2010 – 2013"
       }
     ]
   }
